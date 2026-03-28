@@ -1,0 +1,119 @@
+{
+  "id": "surajgola",
+  "name": "Suraj Gola",
+  "role": "Full Stack Developer",
+  "image": "https://i.pravatar.cc/400?img=4&size=400",
+  "email": "suraj@example.com",
+  "phone": "+91-XXXXXXXXXX",
+  "location": "India",
+  "bio": "Passionate full-stack developer with expertise in web technologies and cloud solutions. 4+ years of experience building scalable applications using modern tech stacks.",
+  "objective": "To leverage technical expertise in building innovative, scalable web applications while contributing to team growth and creating meaningful user experiences.",
+  "aboutHtml": "<p>I'm a full-stack developer passionate about creating elegant solutions to complex problems. With 4+ years of experience, I specialize in modern web technologies and have contributed to multiple successful projects.</p><p>When I'm not coding, I enjoy exploring new technologies, mentoring junior developers, and contributing to open-source projects.</p>",
+  "skills": [
+    {
+      "category": "Frontend",
+      "tags": ["React", "Vue.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Material UI"]
+    },
+    {
+      "category": "Backend",
+      "tags": ["Node.js", "Express.js", "Python", "Django", "MongoDB", "PostgreSQL", "REST APIs", "GraphQL"]
+    },
+    {
+      "category": "DevOps & Tools",
+      "tags": ["Docker", "Git", "Jenkins", "AWS", "Linux", "Webpack", "Vite"]
+    },
+    {
+      "category": "Other",
+      "tags": ["Problem Solving", "Team Leadership", "Agile", "Testing", "CI/CD"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce platform with payment integration, user authentication, and inventory management. Built with React and Node.js.",
+      "imageUrl": "https://via.placeholder.com/400x300?text=E-Commerce",
+      "techStack": ["React", "Node.js", "MongoDB", "Stripe API"],
+      "demoLink": "#",
+      "repoLink": "https://github.com"
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "Collaborative task management application with real-time updates. Features include kanban boards, team collaboration, and notifications.",
+      "imageUrl": "https://via.placeholder.com/400x300?text=Task+Manager",
+      "techStack": ["Vue.js", "Firebase", "Tailwind CSS"],
+      "demoLink": "#",
+      "repoLink": "https://github.com"
+    },
+    {
+      "id": 3,
+      "title": "Analytics Dashboard",
+      "description": "Real-time analytics dashboard displaying business metrics with interactive charts and data visualization.",
+      "imageUrl": "https://via.placeholder.com/400x300?text=Analytics",
+      "techStack": ["React", "D3.js", "Python", "PostgreSQL"],
+      "demoLink": "#",
+      "repoLink": "https://github.com"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Tech Startup Inc",
+      "position": "Senior Developer",
+      "duration": "2022 - Present",
+      "description": "Led development of multiple microservices. architected scalable solutions. mentored junior developers.",
+      "highlight": true
+    },
+    {
+      "id": 2,
+      "company": "Digital Solutions Ltd",
+      "position": "Full Stack Developer",
+      "duration": "2020 - 2022",
+      "description": "Developed and maintained web applications. improved performance by 40%. implemented CI/CD pipelines."
+    },
+    {
+      "id": 3,
+      "company": "StartUp Hub",
+      "position": "Junior Developer",
+      "duration": "2019 - 2020",
+      "description": "Built frontend components. collaborated with design team. learned best practices in web development."
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "title": "AWS Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "date": "2022",
+      "imageUrl": "https://via.placeholder.com/300x200?text=AWS+Certificate"
+    },
+    {
+      "id": 2,
+      "title": "React Advanced Patterns",
+      "issuer": "Udemy",
+      "date": "2021",
+      "imageUrl": "https://via.placeholder.com/300x200?text=React+Certificate"
+    },
+    {
+      "id": 3,
+      "title": "Full Stack Web Development",
+      "issuer": "Coursera",
+      "date": "2020",
+      "imageUrl": "https://via.placeholder.com/300x200?text=FullStack+Certificate"
+    }
+  ],
+  "resume": {
+    "heading": "Professional Resume",
+    "sections": [
+      {
+        "title": "Summary",
+        "content": "Experienced full-stack developer with a proven track record of delivering high-quality web solutions. Strong technical skills combined with excellent communication abilities."
+      },
+      {
+        "title": "Key Achievements",
+        "content": "• Architected and launched 5+ production applications\n• Improved system performance by 40% through optimization\n• Led team of 3 junior developers\n• Implemented automated testing (90% coverage)\n• Reduced deployment time from 2 hours to 15 minutes with CI/CD"
+      }
+    ]
+  }
+}

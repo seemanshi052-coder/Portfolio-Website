@@ -1,0 +1,119 @@
+{
+  "id": "member2",
+  "name": "Alex Chen",
+  "role": "UI/UX Designer & Frontend Developer",
+  "image": "https://i.pravatar.cc/400?img=2&size=400",
+  "email": "alex.chen@example.com",
+  "phone": "+91-9876543210",
+  "location": "Bangalore, India",
+  "bio": "Creative UI/UX designer with 5+ years experience building beautiful, user-centric interfaces. Passionate about design systems and responsive design patterns.",
+  "objective": "To create intuitive and visually stunning user interfaces that solve real problems and delight users across all devices.",
+  "aboutHtml": "<p>Alex is a talented designer who bridges the gap between design and development. With expertise in both UI/UX design and frontend development, Alex brings comprehensive solutions to projects.</p><p>Specializing in design systems, accessibility, and modern design trends, Alex has worked with Fortune 500 companies and innovative startups to deliver world-class digital experiences.</p>",
+  "skills": [
+    {
+      "category": "Design",
+      "tags": ["Figma", "Adobe XD", "Sketch", "UI Design", "UX Research", "Wireframing", "Prototyping", "Design Systems"]
+    },
+    {
+      "category": "Frontend",
+      "tags": ["React", "CSS3", "Tailwind CSS", "Framer Motion", "Responsive Design", "Accessibility", "Web Design"]
+    },
+    {
+      "category": "Tools & Software",
+      "tags": ["Figma", "Adobe Creative Suite", "VS Code", "Git", "InVision", "Zeplin"]
+    },
+    {
+      "category": "Soft Skills",
+      "tags": ["Communication", "Creative Thinking", "User Research", "Mentoring", "Leadership"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Design System for SaaS Platform",
+      "description": "Created comprehensive design system with 200+ components, accessibility guidelines, and brand documentation for enterprise SaaS application.",
+      "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop",
+      "techStack": ["Figma", "React", "Storybook", "Design Tokens"],
+      "demoLink": "#",
+      "repoLink": "https://github.com"
+    },
+    {
+      "id": 2,
+      "title": "Mobile App Redesign",
+      "description": "Complete redesign of mobile banking app resulting in 45% increase in user engagement. Implemented accessibility-first approach.",
+      "imageUrl": "https://images.unsplash.com/photo-1512941691920-25bda36e892d?w=400&h=300&fit=crop",
+      "techStack": ["Figma", "User Research", "Accessibility", "iOS Design"],
+      "demoLink": "#",
+      "repoLink": "#"
+    },
+    {
+      "id": 3,
+      "title": "E-learning Platform UI",
+      "description": "Designed and developed interactive learning dashboard with real-time progress tracking and personalized recommendations.",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+      "techStack": ["React", "Tailwind CSS", "D3.js", "Figma"],
+      "demoLink": "#",
+      "repoLink": "https://github.com"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Design Studios Inc",
+      "position": "Senior Product Designer",
+      "duration": "2021 - Present",
+      "description": "Led design team for 3 major product releases. Established design system used across 15+ products. Mentored 5 junior designers.",
+      "highlight": true
+    },
+    {
+      "id": 2,
+      "company": "TechVision Corp",
+      "position": "UI/UX Designer",
+      "duration": "2018 - 2021",
+      "description": "Designed web and mobile interfaces for analytics platform. Conducted user research and usability testing. Improved conversion rates by 35%."
+    },
+    {
+      "id": 3,
+      "company": "Creative Agency XYZ",
+      "position": "Junior Designer",
+      "duration": "2016 - 2018",
+      "description": "Created digital designs for various clients. Learned industry best practices. Collaborated with developers to ensure design implementation quality."
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "title": "Google UX Design Certificate",
+      "issuer": "Google",
+      "date": "2022",
+      "imageUrl": "https://images.unsplash.com/photo-1503956445157-a01faf94d29c?w=300&h=200&fit=crop"
+    },
+    {
+      "id": 2,
+      "title": "Figma Advanced Design Systems",
+      "issuer": "Interaction Design Foundation",
+      "date": "2021",
+      "imageUrl": "https://images.unsplash.com/photo-1557821552-17105176677c?w=300&h=200&fit=crop"
+    },
+    {
+      "id": 3,
+      "title": "Accessibility in Design (WCAG 2.1)",
+      "issuer": "World Wide Web Consortium",
+      "date": "2020",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=200&fit=crop"
+    }
+  ],
+  "resume": {
+    "heading": "Creative Designer & Frontend Developer",
+    "sections": [
+      {
+        "title": "Summary",
+        "content": "Innovative designer with strong frontend development skills. Proven track record of creating award-winning digital experiences. Expert in design systems, accessibility, and modern design practices."
+      },
+      {
+        "title": "Key Achievements",
+        "content": "• Designed design system used by 50+ developers\n• Increased product engagement by 45% through UX redesign\n• Led rebranding project for major enterprise client\n• Mentored 5 junior designers\n• Created responsive designs supporting 1M+ monthly users"
+      }
+    ]
+  }
+}

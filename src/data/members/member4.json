@@ -1,0 +1,119 @@
+{
+  "id": "member4",
+  "name": "Ravi Patel",
+  "role": "Backend Engineer & Database Architect",
+  "image": "https://i.pravatar.cc/400?img=4&size=400",
+  "email": "ravi.patel@example.com",
+  "phone": "+91-9876543219",
+  "location": "Mumbai, India",
+  "bio": "Backend specialist with 7+ years building large-scale systems. Expert in database optimization, system design, and high-performance computing. Passionate about solving complex problems.",
+  "objective": "To design and build scalable backend systems that can handle millions of transactions efficiently while maintaining data integrity and system reliability.",
+  "aboutHtml": "<p>Ravi is a backend architect who loves tackling complex system design challenges. With experience building systems handling 100M+ operations daily, he brings deep expertise in database optimization, caching strategies, and distributed systems.</p><p>Known for writing clean, maintainable code and mentoring junior developers, Ravi has successfully led technical initiatives at multiple Fortune 500 companies.</p>",
+  "skills": [
+    {
+      "category": "Backend Languages",
+      "tags": ["Python", "Java", "Go", "C++", "PostgreSQL", "MySQL"]
+    },
+    {
+      "category": "Databases & Caching",
+      "tags": ["PostgreSQL", "MongoDB", "Redis", "Elasticsearch", "DynamoDB", "Graph Databases"]
+    },
+    {
+      "category": "System Design",
+      "tags": ["Microservices", "System Architecture", "API Design", "Message Queues", "Load Balancing", "Database Sharding"]
+    },
+    {
+      "category": "Tools & Frameworks",
+      "tags": ["Django", "FastAPI", "Spring Boot", "Kafka", "gRPC", "GraphQL", "Apache Spark"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Real-time Analytics Platform",
+      "description": "Built backend for real-time analytics platform processing 500K events/second. Achieved sub-100ms query latency using optimized database architecture.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+      "techStack": ["Python", "PostgreSQL", "Kafka", "Redis", "Elasticsearch"],
+      "demoLink": "#",
+      "repoLink": "https://github.com"
+    },
+    {
+      "id": 2,
+      "title": "Distributed Payment Processing System",
+      "description": "Designed and built payment processing system handling 1M+ transactions daily with 99.99% uptime. Implemented ACID-compliant distributed transactions.",
+      "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop",
+      "techStack": ["Java", "PostgreSQL", "Message Queues", "Microservices"],
+      "demoLink": "#",
+      "repoLink": "https://github.com"
+    },
+    {
+      "id": 3,
+      "title": "Database Optimization & Migration",
+      "description": "Optimized existing database reducing query time by 80%. Migrated 10TB of data with zero downtime using custom migration framework.",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+      "techStack": ["PostgreSQL", "Python", "Data Engineering", "Performance Tuning"],
+      "demoLink": "#",
+      "repoLink": "https://github.com"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Global Tech Solutions",
+      "position": "Principal Backend Engineer",
+      "duration": "2021 - Present",
+      "description": "Led backend team of 8 engineers. Architected microservices infrastructure processing 100M+ operations daily. Reduced system latency by 60%.",
+      "highlight": true
+    },
+    {
+      "id": 2,
+      "company": "FinTech Enterprise",
+      "position": "Senior Backend Engineer",
+      "duration": "2018 - 2021",
+      "description": "Designed database architecture for payment processing. Implemented optimizations improving throughput by 300%. Mentored 4 junior engineers."
+    },
+    {
+      "id": 3,
+      "company": "DataCorp Analytics",
+      "position": "Backend Developer",
+      "duration": "2015 - 2018",
+      "description": "Built APIs and backend services for analytics platform. Optimized database queries achieving 5x performance improvement."
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "title": "System Design Interview Mastery",
+      "issuer": "Educative.io",
+      "date": "2023",
+      "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f70259b51?w=300&h=200&fit=crop"
+    },
+    {
+      "id": 2,
+      "title": "PostgreSQL Advanced Performance Tuning",
+      "issuer": "PostgreSQL Global Development Group",
+      "date": "2022",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=200&fit=crop"
+    },
+    {
+      "id": 3,
+      "title": "Distributed Systems Design",
+      "issuer": "MIT OpenCourseWare",
+      "date": "2021",
+      "imageUrl": "https://images.unsplash.com/photo-1560264357-8d9766a11d3f?w=300&h=200&fit=crop"
+    }
+  ],
+  "resume": {
+    "heading": "Backend Engineering & System Design Expert",
+    "sections": [
+      {
+        "title": "Summary",
+        "content": "Accomplished backend engineer with proven expertise in building large-scale, high-performance systems. Expert in database architecture, system design, and technical leadership. Track record of delivering mission-critical systems."
+      },
+      {
+        "title": "Key Achievements",
+        "content": "• Designed system processing 100M+ operations daily with 99.99% uptime\n• Optimized databases reducing query latency by 80%\n• Led successful migration of 10TB+ data with zero downtime\n• Mentored and led team of 8 engineers\n• Implemented distributed transaction system handling 1M+ payments daily"
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+/* Custom Cursor Styles */
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary) !important;
+}
+
+/* Hide default cursor */
+* {
+  cursor: none;
+}
+
+body {
+  cursor: none;
+}
+
+/* Custom Cursor Circle */
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: multiply;
+  left: -15px;
+  top: -15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: none;
+}
+
+.cursor.visible {
+  opacity: 1;
+  display: block;
+}
+
+.cursor.hover {
+  width: 50px;
+  height: 50px;
+  left: -25px;
+  top: -25px;
+  border: 2px solid var(--secondary);
+  background: rgba(255, 0, 110, 0.1);
+}
+
+/* Cursor Dot */
+.cursor-dot {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  box-shadow: 0 0 10px var(--primary);
+  left: -3px;
+  top: -3px;
+}
+
+/* Ensure proper cursor display */
+@media (pointer: fine) {
+  .cursor,
+  .cursor-dot {
+    display: block;
+  }
+}
+
+/* Disable custom cursor on touch devices */
+@media (pointer: coarse) {
+  .cursor,
+  .cursor-dot {
+    display: none;
+  }
+
+  * {
+    cursor: auto;
+  }
+
+  body {
+    cursor: auto;
+  }
+}
+
+/* Hover effect animations */
+.cursor.hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--secondary);
+  border-radius: 50%;
+  animation: cursorPulse 0.6s ease-out forwards;
+}
+
+@keyframes cursorPulse {
+  from {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  to {
+    width: 150%;
+    height: 150%;
+    opacity: 0;
+  }
+}
+
+/* Cursor state icons */
+.cursor.hover::after {
+  content: '✨';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  animation: cursorIconRotate 0.6s linear infinite;
+}
+
+@keyframes cursorIconRotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
