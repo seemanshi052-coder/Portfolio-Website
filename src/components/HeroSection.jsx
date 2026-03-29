@@ -97,31 +97,32 @@ function HeroSection({ member }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (imageRef.current && heroRef.current) {
+      if (imageRef.current && contentRef.current && heroRef.current) {
         const heroHeight = heroRef.current.offsetHeight;
         const scrollY = window.scrollY;
-        const heroBounds = heroRef.current.getBoundingClientRect();
+        const heroBottom = heroHeight + 80; // Account for header
 
-        if (heroBounds.top < window.innerHeight) {
-          const nextProgress = Math.min(Math.max(scrollY / heroHeight, 0), 2);
-          setScrollProgress(nextProgress);
+        // Calculate progress: 0 at top, 1 when hero ends
+        const scrollProgress = Math.min(Math.max(scrollY / (heroBottom * 0.8), 0), 1);
+        setScrollProgress(scrollProgress);
 
-          const moveRight = Math.min(nextProgress * 150, 150);
-          const rotateProgress = Math.min(nextProgress * 3, 3);
-          const scaleEffect = Math.max(1 - nextProgress * 0.1, 0.95);
+        if (scrollY < heroBottom) {
+          // Image moves right as we scroll
+          const moveRight = scrollProgress * 150;
+          const scaleEffect = 1 - scrollProgress * 0.05;
+          const imageOpacity = 1 - scrollProgress * 0.2; // Slight fade as we scroll
 
           if (gsap?.set) {
             gsap.set(imageRef.current, {
               x: moveRight,
-              rotation: rotateProgress,
               scale: scaleEffect,
+              opacity: imageOpacity,
             });
           }
         }
       }
     };
 
-    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -129,7 +130,7 @@ function HeroSection({ member }) {
   return (
     <section className="hero-section" ref={heroRef}>
       <div className="hero-container">
-        <div className="hero-image">
+        <div className="hero-image" style={{ willChange: 'transform, opacity' }}>
           <div className="image-glow"></div>
           <img
             ref={imageRef}

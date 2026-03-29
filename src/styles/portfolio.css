@@ -12,24 +12,40 @@
 .portfolio-content {
     display: flex;
     flex-direction: column;
+    margin-left: 80px;
 }
 
 .sections-container {
     flex: 1;
     padding: var(--gap-xxl) 0;
+    position: relative;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .portfolio-content {
         flex-direction: column;
+        margin-left: 70px;
     }
+}
+
+@media (max-width: 768px) {
+    .portfolio-content {
+        margin-left: 0;
+    }
+}
+
+/* Make hero section sticky after initial scroll */
+.hero-section {
+    position: relative;
 }
 
 /* Section Base Styles */
 .portfolio-section {
     padding: var(--gap-xxl) var(--gap-lg);
     border-bottom: 1px solid rgba(0, 212, 255, 0.05);
+    animation: slideInUp 0.8s ease-out forwards;
+    scroll-behavior: smooth;
 }
 
 .portfolio-section:last-child {
@@ -45,6 +61,7 @@
     margin-bottom: var(--gap-lg);
     position: relative;
     padding-bottom: var(--gap-md);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
 }
 
 .portfolio-section h2::after {

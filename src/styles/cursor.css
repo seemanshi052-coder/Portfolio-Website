@@ -4,16 +4,17 @@
   background: var(--primary) !important;
 }
 
-/* Hide default cursor */
+/* Default cursor - visible */
 * {
-  cursor: none;
+  cursor: auto;
 }
 
 body {
-  cursor: none;
+  cursor: auto;
 }
 
-/* Custom Cursor Circle */
+/* Custom Cursor Circle - Hidden by default */
+
 .cursor {
   position: fixed;
   width: 30px;
@@ -21,17 +22,18 @@ body {
   border: 2px solid var(--primary);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: multiply;
+  z-index: 2147483647;
   left: -15px;
   top: -15px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
+  visibility: hidden;
   display: none;
 }
 
 .cursor.visible {
   opacity: 1;
+  visibility: visible;
   display: block;
 }
 
@@ -44,7 +46,7 @@ body {
   background: rgba(255, 0, 110, 0.1);
 }
 
-/* Cursor Dot */
+/* Cursor Dot - Hidden by default */
 .cursor-dot {
   position: fixed;
   width: 6px;
@@ -52,10 +54,11 @@ body {
   background: var(--primary);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 10000;
-  box-shadow: 0 0 10px var(--primary);
+  z-index: 2147483647;
+  box-shadow: 0 0 15px var(--primary), 0 0 25px rgba(0, 212, 255, 0.5);
   left: -3px;
   top: -3px;
+  display: none;
 }
 
 /* Ensure proper cursor display */

@@ -1,8 +1,10 @@
 {
   "id": "member3",
+  "slug": "member3",
   "name": "Priya Sharma",
   "role": "DevOps & Cloud Architecture Engineer",
-  "image": "https://i.pravatar.cc/400?img=3&size=400",
+  "image": "/images/member3.jpeg",
+    "resumeUrl": "/resumes/member3Resume.pdf",
   "email": "priya.sharma@example.com",
   "phone": "+91-9988776655",
   "location": "Delhi, India",

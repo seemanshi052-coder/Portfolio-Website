@@ -1,8 +1,10 @@
 {
   "id": "member4",
+  "slug": "member4",
   "name": "Ravi Patel",
   "role": "Backend Engineer & Database Architect",
-  "image": "https://i.pravatar.cc/400?img=4&size=400",
+  "image": "/images/member4.jpeg",
+    "resumeUrl": "/resumes/member4Resume.pdf",
   "email": "ravi.patel@example.com",
   "phone": "+91-9876543219",
   "location": "Mumbai, India",

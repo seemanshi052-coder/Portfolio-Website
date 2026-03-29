@@ -1,0 +1,146 @@
+/* Section Navigation Styles */
+
+.section-nav {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  height: calc(100vh - 80px);
+  width: 80px;
+  background: rgba(10, 14, 39, 0.95);
+  border-right: 1px solid rgba(0, 212, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: var(--gap-lg) 0;
+}
+
+/* Navigation Items */
+.nav-item {
+  position: relative;
+  width: 100%;
+  padding: var(--gap-md) var(--gap-sm);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-xs);
+  transition: all 0.3s ease;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.nav-label {
+  display: block;
+  max-width: 70px;
+  word-break: break-word;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+.nav-item:hover {
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--primary);
+}
+
+.nav-item:hover .nav-icon {
+  transform: scale(1.2);
+}
+
+/* Active State */
+.nav-item.active {
+  background: rgba(0, 212, 255, 0.15);
+  color: var(--primary);
+  border-left: 3px solid var(--primary);
+  padding-left: calc(var(--gap-sm) - 3px);
+}
+
+.nav-item.active .nav-icon {
+  transform: scale(1.25);
+}
+
+/* Active Indicator */
+.nav-indicator {
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 40px;
+  background: linear-gradient(180deg, transparent, var(--primary), transparent);
+  animation: pulseIndicator 2s ease-in-out infinite;
+}
+
+@keyframes pulseIndicator {
+  0%, 100% {
+    opacity: 1;
+    height: 40px;
+  }
+  50% {
+    opacity: 0.7;
+    height: 50px;
+  }
+}
+
+/* Scrollbar Styles */
+.section-nav::-webkit-scrollbar {
+  width: 4px;
+}
+
+.section-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.section-nav::-webkit-scrollbar-thumb {
+  background: rgba(0, 212, 255, 0.2);
+  border-radius: 2px;
+}
+
+.section-nav::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 212, 255, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .section-nav {
+    width: 70px;
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+
+  .nav-item {
+    padding: var(--gap-sm) var(--gap-xs);
+  }
+
+  .nav-icon {
+    font-size: 1.25rem;
+  }
+
+  .nav-label {
+    font-size: 0.65rem;
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-nav {
+    display: none;
+  }
+}

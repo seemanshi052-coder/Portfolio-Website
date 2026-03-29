@@ -1,0 +1,52 @@
+/* Footer Styles */
+
+.footer {
+  width: 100%;
+  background: rgba(10, 14, 39, 0.8);
+  border-top: 1px solid rgba(0, 212, 255, 0.1);
+  padding: var(--gap-lg) var(--gap-md);
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.heart {
+  display: inline-block;
+  margin: 0 0.3rem;
+  animation: heartbeat 1.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--gap-md);
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+  }
+}

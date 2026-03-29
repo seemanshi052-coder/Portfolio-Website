@@ -7,22 +7,19 @@
         var(--background) 0%,
         rgba(15, 20, 50, 0.8) 100%
     );
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Hero Section */
-.landing-hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--gap-xxl) var(--gap-lg);
+/* Team Header */
+.team-header {
+    padding: var(--gap-xxl) var(--gap-lg) var(--gap-lg);
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-.landing-hero::before {
+.team-header::before {
     content: "";
     position: absolute;
     top: -50%;
@@ -38,13 +35,13 @@
     pointer-events: none;
 }
 
-.landing-hero .container {
+.team-header .container {
     position: relative;
     z-index: 1;
 }
 
-.landing-hero h1 {
-    font-size: clamp(3rem, 8vw, 5rem);
+.team-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 800;
     letter-spacing: -0.03em;
     background: linear-gradient(
@@ -56,148 +53,190 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: var(--gap-md);
-    text-shadow: 0 0 30px rgba(0, 212, 255, 0.2);
+    margin: 0 0 var(--gap-md) 0;
 }
 
-.landing-hero .subtitle {
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
-    color: var(--text);
-    margin-bottom: var(--gap-md);
-    font-weight: 400;
-}
-
-.landing-hero .description {
+.team-subtitle {
     font-size: 1.1rem;
     color: var(--text-secondary);
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     line-height: 1.8;
-    margin-bottom: var(--gap-xl);
 }
 
 /* Team Section */
 .team-section {
     padding: var(--gap-xxl) var(--gap-lg);
+    flex: 1;
+    display: flex;
+    align-items: center;
     position: relative;
-    z-index: 1;
 }
 
-.team-section h2 {
-    text-align: center;
-    margin-bottom: var(--gap-xxl);
-    font-size: clamp(2rem, 5vw, 3rem);
+.team-section .container {
+    width: 100%;
 }
 
-.members-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--gap-lg);
-    max-width: 1200px;
+.members-carousel {
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-xl);
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1400px;
     margin: 0 auto;
-    perspective: 1000px;
 }
 
-/* Member Card */
-.member-card {
+/* Flask Card Style */
+.member-flask-card {
     position: relative;
     cursor: pointer;
-    padding: var(--gap-lg);
-    border-radius: var(--radius-lg);
-    background: rgba(22, 33, 62, 0.8);
-    border: 1px solid rgba(0, 212, 255, 0.1);
-    transition: all var(--transition-normal);
+    width: 220px;
+    height: 320px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(22, 33, 62, 0.9), rgba(15, 20, 50, 0.9));
+    border: 2px solid rgba(0, 212, 255, 0.2);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    transform-style: preserve-3d;
-    will-change: transform;
+    padding: var(--gap-md);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    will-change: transform, box-shadow;
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
 }
 
-.member-card::before {
+.member-flask-card::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(0, 212, 255, 0.1),
-        transparent
-    );
-    transition: left var(--transition-normal);
-    pointer-events: none;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(131, 56, 236, 0.05));
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
-.member-card:hover {
+.member-flask-card:hover {
+    transform: scale(1.15) translateY(-20px);
     border-color: var(--primary);
-    background: rgba(22, 33, 62, 1);
-    transform: translateY(-8px) rotateX(5deg) rotateY(-5deg);
-    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+    background: linear-gradient(135deg, rgba(22, 33, 62, 1), rgba(15, 20, 50, 1));
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3), inset 0 0 20px rgba(0, 212, 255, 0.1);
 }
 
-.member-card:hover::before {
-    left: 100%;
+.member-flask-card:hover::before {
+    opacity: 1;
 }
 
-.member-image-wrapper {
+.member-flask-card:hover .flask-image {
+    transform: scale(1.1);
+}
+
+.flask-image-wrapper {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     margin-bottom: var(--gap-md);
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid var(--primary);
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.3);
+    flex-shrink: 0;
 }
 
-.member-image {
+.flask-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform var(--transition-normal);
+    transition: transform 0.4s ease;
 }
 
-.member-card:hover .member-image {
-    transform: scale(1.1);
-}
-
-.member-card h3 {
-    color: var(--text);
-    margin: var(--gap-md) 0 var(--gap-sm) 0;
-    font-size: 1.35rem;
-}
-
-.member-role {
-    color: var(--primary);
-    font-size: 0.95rem;
-    font-weight: 500;
-}
-
-/* Landing Footer */
-.landing-footer {
-    padding: var(--gap-xl) var(--gap-lg);
+.flask-content {
     text-align: center;
-    border-top: 1px solid rgba(0, 212, 255, 0.1);
-    color: var(--text-secondary);
-    font-size: 0.9rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.flask-content h3 {
+    color: var(--text);
+    margin: 0 0 var(--gap-xs) 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.flask-role {
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.4;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .landing-hero::before {
-        width: 300px;
+    .members-carousel {
+        gap: var(--gap-lg);
+    }
+
+    .member-flask-card {
+        width: 200px;
         height: 300px;
+    }
+
+    .flask-image-wrapper {
+        width: 120px;
+        height: 120px;
     }
 }
 
 @media (max-width: 768px) {
-    .landing-hero {
+    .team-header {
+        padding: var(--gap-lg) var(--gap-md);
+    }
+
+    .team-title {
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+    }
+
+    .team-subtitle {
+        font-size: 1rem;
+    }
+
+    .team-section {
+        padding: var(--gap-lg) var(--gap-md);
+    }
+
+    .members-carousel {
+        gap: var(--gap-md);
+    }
+
+    .member-flask-card {
+        width: 180px;
+        height: 280px;
+        padding: var(--gap-sm);
+    }
+
+    .flask-image-wrapper {
+        width: 100px;
+        height: 100px;
+        margin-bottom: var(--gap-sm);
+    }
+
+    .member-flask-card:hover {
+        transform: scale(1.1) translateY(-15px);
+    }
+
+    .flask-content h3 {
+        font-size: 1rem;
+    }
+
+    .flask-role {
+        font-size: 0.8rem;
+    }
+}
         min-height: auto;
         padding: var(--gap-xl) var(--gap-md);
     }

@@ -20,9 +20,7 @@ function CustomCursor() {
 
     const handleMouseMove = (e) => {
       targetRef.current = { x: e.clientX, y: e.clientY };
-    };
-
-    const handleMouseEnter = () => {
+      // Always show cursor on mouse move
       if (cursorRef.current) {
         cursorRef.current.classList.add("visible");
       }
@@ -66,7 +64,6 @@ function CustomCursor() {
     };
 
     document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseenter", handleMouseEnter);
     document.addEventListener("mouseleave", handleMouseLeave);
 
     const interactiveElements = document.querySelectorAll(
@@ -82,7 +79,6 @@ function CustomCursor() {
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseenter", handleMouseEnter);
       document.removeEventListener("mouseleave", handleMouseLeave);
       interactiveElements.forEach((el) => {
         el.removeEventListener("mouseenter", handleMouseOverInteractive);

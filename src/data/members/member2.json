@@ -1,8 +1,10 @@
 {
   "id": "member2",
+  "slug": "member2",
   "name": "Alex Chen",
   "role": "UI/UX Designer & Frontend Developer",
-  "image": "https://i.pravatar.cc/400?img=2&size=400",
+  "image": "/images/member2.jpeg",
+    "resumeUrl": "/resumes/member2Resume.pdf",
   "email": "alex.chen@example.com",
   "phone": "+91-9876543210",
   "location": "Bangalore, India",

@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { TEAM_CONFIG } from "../config/teamConfig";
 import { MEMBERS_ARRAY } from "../data/members";
 import MemberCard from "../components/MemberCard";
+import Footer from "../components/Footer";
 import {
   DEFAULT_PAGE_DESCRIPTION,
   DEFAULT_PAGE_TITLE,
@@ -89,48 +90,58 @@ function LandingPage() {
 
   return (
     <div className="landing-page">
-      {/* Hero Section */}
-      <section className="landing-hero">
+      {/* Team Header */}
+      <section className="team-header">
         <div className="container">
-          <h1>{TEAM_CONFIG.teamName}</h1>
-          <p className="subtitle">
-            A passionate team innovating at {TEAM_CONFIG.hackathonName}
-          </p>
-          <p className="description">{TEAM_CONFIG.hackathonDescription}</p>
+          <h1 className="team-title">{TEAM_CONFIG.teamName}</h1>
+          <p className="team-subtitle">A passionate team innovating at {TEAM_CONFIG.hackathonName}</p>
         </div>
       </section>
 
-      {/* Team Members Grid */}
+      {/* Team Members Cards */}
       <section className="team-section">
         <div className="container">
-          <h2>Meet Our Team</h2>
-          <div className="members-grid">
+          <div className="members-carousel">
             {MEMBERS_ARRAY.map((member) => (
-              <MemberCard
+              <div
                 key={member.id}
-                member={member}
+                className="member-flask-card"
                 onClick={() => handleMemberClick(member.id)}
+                role="button"
+                tabIndex={0}
                 onKeyDown={(event) => {
                   if (event.key === "Enter" || event.key === " ") {
                     event.preventDefault();
                     handleMemberClick(member.id);
                   }
                 }}
-              />
+                aria-label={`Open ${member.name}'s portfolio`}
+              >
+                <div className="flask-image-wrapper">
+                  <img
+                    src={
+                      member.imageUrl || 
+                      `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23102740' width='300' height='400'/%3E%3C/svg%3E`
+                    }
+                    alt={`${member.name} portrait`}
+                    className="flask-image"
+                    onError={(e) => {
+                      e.target.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Crect fill='%23102740' width='300' height='400'/%3E%3C/svg%3E`;
+                    }}
+                  />
+                </div>
+                <div className="flask-content">
+                  <h3>{member.name}</h3>
+                  <p className="flask-role">{member.role}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="landing-footer">
-        <div className="container">
-          <p>
-            &copy; {new Date().getFullYear()} {TEAM_CONFIG.teamName}. All rights
-            reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

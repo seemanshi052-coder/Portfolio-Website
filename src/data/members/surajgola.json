@@ -1,8 +1,10 @@
 {
   "id": "surajgola",
+  "slug": "surajgola",
   "name": "Suraj Gola",
   "role": "Full Stack Developer",
-  "image": "https://i.pravatar.cc/400?img=4&size=400",
+  "image": "/images/surajgola.jpeg",
+    "resumeUrl": "/resumes/SurajGolaResume.pdf",
   "email": "suraj@example.com",
   "phone": "+91-XXXXXXXXXX",
   "location": "India",
