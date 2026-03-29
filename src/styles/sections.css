@@ -96,8 +96,10 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 1fr;
     gap: var(--gap-lg);
     perspective: 1000px;
+    align-items: stretch;
 }
 
 .project-card {
@@ -108,6 +110,8 @@
     transition: all var(--transition-normal);
     transform-style: preserve-3d;
     will-change: transform;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -136,6 +140,9 @@
 
 .project-content {
     padding: var(--gap-lg);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-content h3 {
@@ -148,6 +155,9 @@
     color: var(--text-secondary);
     margin-bottom: var(--gap-md);
     font-size: 0.95rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .tech-stack {
@@ -155,6 +165,7 @@
     flex-wrap: wrap;
     gap: var(--gap-xs);
     margin-bottom: var(--gap-md);
+    margin-top: auto;
 }
 
 .tech-badge {
@@ -170,6 +181,7 @@
 .project-links {
     display: flex;
     gap: var(--gap-sm);
+    margin-top: auto;
 }
 
 .project-link {

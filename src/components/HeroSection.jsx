@@ -144,9 +144,7 @@ function HeroSection({ member }) {
           <h1>{member.name}</h1>
           <p className="hero-role">{member.role}</p>
           <p className="hero-subtext">
-            {heroSummary.length > 150
-              ? `${heroSummary.slice(0, 150)}...`
-              : heroSummary}
+            {heroSummary}
           </p>
           <div className="hero-badges">
             <span className="badge">💻 Developer</span>

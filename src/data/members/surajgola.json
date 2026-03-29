@@ -2,95 +2,100 @@
   "id": "surajgola",
   "slug": "surajgola",
   "name": "Suraj Gola",
-  "role": "Team Lead & Full Stack Developer",
+  "role": "Full Stack Developer | AI & Backend Enthusiast",
   "image": "/images/surajgola.jpeg",
-    "resumeUrl": "/resumes/SurajGolaResume.pdf",
+  "resumeUrl": "/resumes/SurajGolaResume.pdf",
   "email": "ss0331984@gmail.com",
   "phone": "+91-87006-22004",
   "location": "India",
-  "bio": "Passionate full-stack developer with expertise in web technologies and cloud solutions. 4+ years of experience building scalable applications using modern tech stacks.",
-  "objective": "To leverage technical expertise in building innovative, scalable web applications while contributing to team growth and creating meaningful user experiences.",
-  "aboutHtml": "<p>I'm a full-stack developer passionate about creating elegant solutions to complex problems. With 4+ years of experience, I specialize in modern web technologies and have contributed to multiple successful projects.</p><p>When I'm not coding, I enjoy exploring new technologies, mentoring junior developers, and contributing to open-source projects.</p>",
+  "bio": "B.Tech CSE student and full-stack developer with strong interest in backend systems, AI, and real-world problem solving. Experienced in building scalable projects, participating in national hackathons, and publishing research.",
+  "objective": "To build impactful and scalable technology solutions by leveraging skills in backend development, AI, and system design while continuously learning and contributing to innovative projects.",
+  
   "skills": [
     {
       "category": "Frontend",
-      "tags": ["React", "Vue.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Material UI"]
+      "tags": ["HTML", "CSS", "JavaScript", "React"]
     },
     {
       "category": "Backend",
-      "tags": ["Node.js", "Express.js", "Python", "Django", "MongoDB", "PostgreSQL", "REST APIs", "GraphQL"]
+      "tags": ["Python", "FastAPI", "REST APIs", "MySQL", "SQLite"]
     },
     {
-      "category": "DevOps & Tools",
-      "tags": ["Docker", "Git", "Jenkins", "AWS", "Linux", "Webpack", "Vite"]
+      "category": "Tools & Technologies",
+      "tags": ["Git", "GitHub", "ESP32", "Arduino", "Automation"]
     },
     {
       "category": "Other",
-      "tags": ["Problem Solving", "Team Leadership", "Agile", "Testing", "CI/CD"]
+      "tags": ["Problem Solving", "Team Leadership", "Hackathons", "Research"]
     }
   ],
+
   "projects": [
     {
       "id": 1,
-      "title": "E-Commerce Platform",
-      "description": "Full-stack e-commerce platform with payment integration, user authentication, and inventory management. Built with React and Node.js.",
-      "imageUrl": "https://via.placeholder.com/400x300?text=E-Commerce",
-      "techStack": ["React", "Node.js", "MongoDB", "Stripe API"],
-      "demoLink": "#",
-      "repoLink": "https://github.com"
+      "title": "CareMatrix",
+      "description": "Engineered an AI-powered healthcare system for patient monitoring and decision support. Enabled real-time insights and improved healthcare management efficiency.",
+      "techStack": ["Python", "FastAPI", "AI Models", "Database"],
+      "demoLink": "https://drive.google.com/file/d/15hxk2fw424ntLUi7upqcotJgq7gcymIR/view",
+      "repoLink": "https://github.com/TodFodCoders/CareMatrix"
     },
     {
       "id": 2,
-      "title": "Task Management App",
-      "description": "Collaborative task management application with real-time updates. Features include kanban boards, team collaboration, and notifications.",
-      "imageUrl": "https://via.placeholder.com/400x300?text=Task+Manager",
-      "techStack": ["Vue.js", "Firebase", "Tailwind CSS"],
-      "demoLink": "#",
-      "repoLink": "https://github.com"
+      "title": "Smart Yatra",
+      "description": "Developed a smart travel platform for efficient trip planning and route optimization. Enhanced user experience through structured data handling.",
+      "techStack": ["Python", "Web Development"],
+      "demoLink": "https://drive.google.com/file/d/1kj6SQ3OnHBST44NhxIyrrUaoDwa3o3Tg/view?usp=sharing",
+      "repoLink": "https://github.com/surajgola00/Smart-Yatra"
     },
     {
       "id": 3,
-      "title": "Analytics Dashboard",
-      "description": "Real-time analytics dashboard displaying business metrics with interactive charts and data visualization.",
-      "imageUrl": "https://via.placeholder.com/400x300?text=Analytics",
-      "techStack": ["React", "D3.js", "Python", "PostgreSQL"],
-      "demoLink": "#",
-      "repoLink": "https://github.com"
-    }
-  ],
-  "certificates": [
-    {
-      "id": 1,
-      "title": "AWS Solutions Architect",
-      "issuer": "Amazon Web Services",
-      "date": "2022",
-      "imageUrl": "https://via.placeholder.com/300x200?text=AWS+Certificate"
+      "title": "Repo Scanning System",
+      "description": "Built an automated repository scanning tool to detect security vulnerabilities and code inefficiencies, improving code quality and safety.",
+      "techStack": ["Python", "Automation"],
+      "demoLink": "https://drive.google.com/file/d/15hxk2fw424ntLUi7upqcotJgq7gcymIR/view",
+      "repoLink": "https://github.com/TodFodCoders/RIFT-2k26"
     },
     {
-      "id": 2,
-      "title": "React Advanced Patterns",
-      "issuer": "Udemy",
-      "date": "2021",
-      "imageUrl": "https://via.placeholder.com/300x200?text=React+Certificate"
-    },
-    {
-      "id": 3,
-      "title": "Full Stack Web Development",
-      "issuer": "Coursera",
-      "date": "2020",
-      "imageUrl": "https://via.placeholder.com/300x200?text=FullStack+Certificate"
+      "id": 4,
+      "title": "Emergency Vehicle Road Clearance System",
+      "description": "Developed a smart system to prioritize emergency vehicles by clearing traffic lanes in advance using automation and hardware integration.",
+      "techStack": ["Arduino", "ESP32", "IoT"],
+      "demoLink": "https://drive.google.com/file/d/1_myjQqI6oWM2gIQ8SfEeol_685S-n0RG/view",
+      "repoLink": "https://github.com/surajgola00/Emergency-Vehicle-road-clearance-system"
     }
   ],
+  
+  "achievements": [
+    {
+      "title": "Plaksha Young Creators League (YCL)",
+      "description": "Selected in Top 50 out of 1058 teams for national-level exhibition. Presented Emergency Vehicle Road Clearance System."
+    },
+    {
+      "title": "CodeSphere Hackathon",
+      "description": "Secured winning position among competing teams. Selected for ACIC Incubation Program at SGT University to scale the project."
+    },
+    {
+      "title": "PW Hackathon",
+      "description": "Participated in a national-level hackathon. Built a functional prototype solving real-world problems under time constraints."
+    },
+    {
+      "title": "Research Paper Publication",
+      "description": "Published and presented a research paper in a reputed conference/book, showcasing research and technical documentation skills."
+    }
+  ],
+
+  "certificates": [],
+
   "resume": {
     "heading": "Professional Resume",
     "sections": [
       {
         "title": "Summary",
-        "content": "Experienced full-stack developer with a proven track record of delivering high-quality web solutions. Strong technical skills combined with excellent communication abilities."
+        "content": "B.Tech CSE student with strong interest in backend development, AI, and automation. Experienced in building real-world projects, leading teams, and participating in national-level hackathons."
       },
       {
         "title": "Key Achievements",
-        "content": "• Architected and launched 5+ production applications\n• Improved system performance by 40% through optimization\n• Led team of 3 junior developers\n• Implemented automated testing (90% coverage)\n• Reduced deployment time from 2 hours to 15 minutes with CI/CD"
+        "content": "• Winner - CodeSphere Hackathon\n• Selected for ACIC Incubation Program at SGT University\n• Top 50 out of 1058 teams - Plaksha YCL\n• Published research paper in reputed conference/book\n• Built multiple real-world projects in AI, backend, and IoT"
       }
     ]
   }
