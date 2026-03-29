@@ -8,6 +8,12 @@
   "email": "kaushiktushar337@gmail.com",
   "phone": "9718617177",
   "location": "New Delhi, India",
+  "socialLinks": {
+    "github": "https://github.com/kaushiktushar337",
+    "linkedin": "https://www.linkedin.com/in/tushar-6055b9391/",
+    "instagram": "https://www.instagram.com/_human_being_0007/",
+    "leetcode": "https://leetcode.com/u/Tusharkaushik7/"
+  },
   "bio": "B.Tech CSE student at Dronacharya College of Engineering with a focus on predictive modeling and automation. Passionate about leveraging data science to solve complex resource allocation problems, particularly in healthcare.",
   "objective": "To leverage data science to solve complex resource allocation problems, particularly in healthcare, while actively participating in the startup incubation ecosystem to bring tech-driven ideas to life.",
   "aboutHtml": "<p>Tushar is an AI & Machine Learning developer currently pursuing a B.Tech in Computer Science and Engineering at Dronacharya College of Engineering (2025–2029).</p><p>He specializes in predictive analytics, feature engineering, and automation scripting. His flagship project, CareMatrix, uses Random Forest to forecast hospital patient inflow with a 72-hour lead time. Tushar was selected for the ACIC SGTU Incubation Program and placed 3rd at the CodeSphere 36-Hour Hackathon at SGT University.</p>",
@@ -37,7 +43,7 @@
       "imageUrl": "/images/CareMatrixDashboard.jpeg",
       "techStack": ["Python", "Random Forest", "Scikit-learn", "Pandas", "Streamlit"],
       "demoLink": "#",
-      "repoLink": "https://github.com/kaushiktushar337"
+      "repoLink": "https://github.com/kaushiktushar337/CareMatrix"
     }
   ],
   "certificates": [

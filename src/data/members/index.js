@@ -104,6 +104,10 @@ const normalizeMember = (member) => {
       email: member.email || "",
       phone: member.phone || "",
       location: member.location || "",
+      github: member.socialLinks?.github || "",
+      linkedin: member.socialLinks?.linkedin || "",
+      instagram: member.socialLinks?.instagram || "",
+      leetcode: member.socialLinks?.leetcode || "",
     },
   };
 };

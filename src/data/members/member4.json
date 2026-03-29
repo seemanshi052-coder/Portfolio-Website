@@ -4,10 +4,16 @@
   "name": "Ravi Patel",
   "role": "Backend Engineer & Database Architect",
   "image": "/images/member4.jpeg",
-    "resumeUrl": "/resumes/member4Resume.pdf",
+  "resumeUrl": "/resumes/member4Resume.pdf",
   "email": "ravi.patel@example.com",
   "phone": "+91-9876543219",
   "location": "Mumbai, India",
+  "socialLinks": {
+    "github": "https://github.com/ravi-patel-backend",
+    "linkedin": "https://www.linkedin.com/in/ravi-patel-systems/",
+    "instagram": "https://www.instagram.com/ravi.patel.dev/",
+    "leetcode": "https://leetcode.com/u/ravipatel/"
+  },
   "bio": "Backend specialist with 7+ years building large-scale systems. Expert in database optimization, system design, and high-performance computing. Passionate about solving complex problems.",
   "objective": "To design and build scalable backend systems that can handle millions of transactions efficiently while maintaining data integrity and system reliability.",
   "aboutHtml": "<p>Ravi is a backend architect who loves tackling complex system design challenges. With experience building systems handling 100M+ operations daily, he brings deep expertise in database optimization, caching strategies, and distributed systems.</p><p>Known for writing clean, maintainable code and mentoring junior developers, Ravi has successfully led technical initiatives at multiple Fortune 500 companies.</p>",

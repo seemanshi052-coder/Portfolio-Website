@@ -4,10 +4,16 @@
   "name": "Priya Sharma",
   "role": "DevOps & Cloud Architecture Engineer",
   "image": "/images/member3.jpeg",
-    "resumeUrl": "/resumes/member3Resume.pdf",
+  "resumeUrl": "/resumes/member3Resume.pdf",
   "email": "priya.sharma@example.com",
   "phone": "+91-9988776655",
   "location": "Delhi, India",
+  "socialLinks": {
+    "github": "https://github.com/priya-sharma-devops",
+    "linkedin": "https://www.linkedin.com/in/priya-sharma-cloud/",
+    "instagram": "https://www.instagram.com/priya.sharma.devops/",
+    "leetcode": "https://leetcode.com/u/priyasharma/"
+  },
   "bio": "Cloud architect and DevOps specialist with 6+ years experience designing scalable infrastructure. AWS certified and passionate about automation and continuous integration.",
   "objective": "To architect robust, scalable cloud infrastructure solutions that enable businesses to focus on innovation while ensuring security, reliability, and cost efficiency.",
   "aboutHtml": "<p>Priya is a seasoned DevOps engineer who has transformed infrastructure for multiple high-growth startups and enterprises. Her expertise spans AWS, Kubernetes, Docker, and infrastructure-as-code frameworks.</p><p>With a passion for automation and continuous improvement, Priya has reduced deployment times by up to 80% and improved system reliability across multiple organizations. She's also an active speaker at tech conferences.</p>",
